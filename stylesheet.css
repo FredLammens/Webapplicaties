@@ -1,0 +1,116 @@
+
+.navbar-dark{
+    background-color: #333;
+}
+.navbar-dark .navbar-brand{
+    color:white !important; /*important is om te overriden werd anders niet wit*/
+    font-family: 'Anton','Bitter',sans-serif;
+    font-size:2em;
+}
+header{
+font-family: 'Anton',sans-serif;
+}
+
+.nav-link{
+    color:grey; 
+}
+.active{
+    border:1px solid;
+}
+nav a:hover{
+    color:white !important;
+}
+body{
+    font-family: 'Anton','Bitter',sans-serif;
+    background-image: linear-gradient(#333,grey);
+}
+.jumbotron{
+    background-image: linear-gradient(grey,#333);
+    color:white;
+}
+.btn-primary:hover{
+    background-color: white;
+    color:black;
+}
+.btn-primary{
+    background-color: #333;;
+}
+section .btn-primary:hover{
+    background-color:lightgray;
+}
+/*toevoegen bottom margin bij elke kolom zodat bij mobile er een spatie tussen de kolommen is (soort gutter)*/
+[class*="col-"] {
+    margin-bottom: 15px;
+}
+footer{
+    font-family:'Oswald',sans-serif;
+    background-color: #333;
+    text-align: center;
+}
+footer h3{
+    color:white;
+    text-decoration:underline;
+}
+.socialmedia a{
+    color:white;
+    font-size:2.5rem;
+}
+.socialmedia a:hover{
+    color:grey;
+}
+.contact a{
+    text-decoration: none;
+    color:white;
+}
+.contact a:hover{
+    text-decoration:underline;
+    color:grey;
+}
+/*sticky footer*/
+html{
+    position: relative;
+    min-height:100%;
+}
+body{
+    /*margin bottom by footer height*/
+    margin-bottom: 260px;
+}
+footer{
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+/*speciale kleuren aanbrengen*/
+.bg-primary{
+    background-color:#D4AF37 !important;
+}
+.bg-secondary{
+    background-color:#C0C0C0 !important;
+}
+.card-title{
+    text-decoration: underline;
+}
+.formulier{
+    color:white;
+    font-family: 'Oswald',sans-serif;
+    margin-left: 1%;
+}
+#BagageChecklist, #Reistips {
+    font-family: 'Oswald',sans-serif;
+    color:white;
+    margin-left:1%;
+}
+#BagageChecklist h2, #BagageChecklist h1 , #Reistips h1{
+    color:#eeee;
+    text-decoration:underline;
+}
+.pagination{
+    margin-left:42%;
+}
+.banner{
+    background-color:white;
+    color:black !important;
+}
+.banner h1{
+    text-decoration: underline;
+}

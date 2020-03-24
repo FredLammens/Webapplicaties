@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <!-- viewporet instellen-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="wth=device-wth, initial-scale=1" />
+    <title>Intricate Travel</title>
+    <link rel="shortcut icon" type="image/png" href="./images/LogoFavicon.png">
+    <!--favicon toevoegen-->
+    <!--Reset css voor eventuele inconsistenties tussen browsers-->
+    <link rel="stylesheet" href="./reset.css" />
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!--Eigen CSS-->
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <!--google text font toevoegen-->
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <!--font awesome icons toevoegen-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top">
+        <!--expands at medium size-->
+        <a class="navbar-brand" href="./index.html"><img src="./images/logo40.png"> Intricate Travel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" ="navbarToggler">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./onzereizen.html">Onze reizen</a></li>
+                <li class="nav-item"><a class="nav-link" href="./fotogallerij.html">Foto Gallerij</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./reistips.html">Reistips</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+            </ul>
+    </nav>
+    <!--moet jammer genoeg copy paste , kun je ook via php / jquery oplossen-->
+    <!--body-->
+    <section id="BagageChecklist">
+        <h1>BagageChecklist</h1>
+        <br>
+        <form action="https://www.w3schools.com/action_page.php" method="GET">
+            <div class="form-row ">
+                <div class="form-group col-lg-4 col-md-6 col-12">
+                    <h2>Kledij</h2>
+                    <div class="form-check">
+                        <input class="form-check-input" name="sweater" type="checkbox" value="true">
+                        <label class="form-check-label" for="sweater">
+                            Sweater/Pullover
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Hemd" type="checkbox" value="true">
+                        <label class="form-check-label" for="Hemd">
+                            Hemd/bloes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Broek" type="checkbox" value="true">
+                        <label class="form-check-label" for="Broek">
+                            Broek-rok
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Jurk" type="checkbox" value="true">
+                        <label class="form-check-label" for="Jurk">
+                            Jurk
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Short" type="checkbox" value="true">
+                        <label class="form-check-label" for="Short">
+                            Short
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="T-shirt" type="checkbox" value="true">
+                        <label class="form-check-label" for="T-shirt">
+                            T-shirt
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Jas" type="checkbox" value="true">
+                        <label class="form-check-label" for="Jas">
+                            Jas/Regenjas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Zwembroek" type="checkbox" value="true">
+                        <label class="form-check-label" for="Zwembroek">
+                            Zwembroek-badpak-bikini
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Onderbroek" type="checkbox" value="true">
+                        <label class="form-check-label" for="Onderbroek">
+                            Ondergoed
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Zakdoek" type="checkbox" value="true">
+                        <label class="form-check-label" for="Zakdoek">
+                            Zakdoeken
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Sok" type="checkbox" value="true">
+                        <label class="form-check-label" for="Sok">
+                            Kousen,sokken,panty's
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Pyama" type="checkbox" value="true">
+                        <label class="form-check-label" for="Pyama">
+                            Pyama,nachtkleed
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Schoenen" type="checkbox" value="true">
+                        <label class="form-check-label" for="Schoenen">
+                            Schoenen/Sportschoenen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Sandalen" type="checkbox" value="true">
+                        <label class="form-check-label" for="Sandalen">
+                            Sandalen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="WandelSc" type="checkbox" value="true">
+                        <label class="form-check-label" for="WandelSc">
+                            Wandelschoenen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Slippers" type="checkbox" value="true">
+                        <label class="form-check-label" for="Slippers">
+                            Slippers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Hoed" type="checkbox" value="true">
+                        <label class="form-check-label" for="Hoed">
+                            Hoed/pet/sjaal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Riem" type="checkbox" value="true">
+                        <label class="form-check-label" for="Riem">
+                            Riem
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Waszak" type="checkbox" value="true">
+                        <label class="form-check-label" for="Waszak">
+                            Waszak
+                        </label>
+                    </div>
+                    <br>
+                    <h2>ToiletGerief</h2>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Handdoek" type="checkbox" value="true">
+                        <label class="form-check-label" for="Handdoek">
+                            Handdoek
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Badlaken" type="checkbox" value="true">
+                        <label class="form-check-label" for="Badlaken">
+                            Badlaken
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Washandje" type="checkbox" value="true">
+                        <label class="form-check-label" for="Washandje">
+                            Washandje
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Zeep" type="checkbox" value="true">
+                        <label class="form-check-label" for="Zeep">
+                            Zeep
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Kam" type="checkbox" value="true">
+                        <label class="form-check-label" for="Kam">
+                            Kam,borstel
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Shampoo" type="checkbox" value="true">
+                        <label class="form-check-label" for="Shampoo">
+                            Shampoo,douchegel
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Spiegel" type="checkbox" value="true">
+                        <label class="form-check-label" for="Spiegel">
+                            Spiegeltje
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Scheerapp" type="checkbox" value="true">
+                        <label class="form-check-label" for="Scheerapp">
+                            Scheerapparaat
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Tandenborstel" type="checkbox" value="true">
+                        <label class="form-check-label" for="Tandenborstel">
+                            Tandenborstel
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Tandpasta" type="checkbox" value="true">
+                        <label class="form-check-label" for="Tandpasta">
+                            Tandpasta
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Nagelknipper" type="checkbox" value="true">
+                        <label class="form-check-label" for="Nagelknipper">
+                            Nagelknipper/vijl
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Watjes" type="checkbox" value="true">
+                        <label class="form-check-label" for="Watjes">
+                            Watjes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Oorstaafjes" type="checkbox" value="true">
+                        <label class="form-check-label" for="Oorstaafjes">
+                            Oorstaafjes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Zakdoeken" type="checkbox" value="true">
+                        <label class="form-check-label" for="Zakdoeken">
+                            Zakdoeken
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Make-up" type="checkbox" value="true">
+                        <label class="form-check-label" for="Make-up">
+                            Make-up
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Deo" type="checkbox" value="true">
+                        <label class="form-check-label" for="Deo">
+                            Deodorant
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Zonnecrème" type="checkbox" value="true">
+                        <label class="form-check-label" for="Zonnecrème">
+                            Zonnecrème
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Aftersun" type="checkbox" value="true">
+                        <label class="form-check-label" for="Aftersun">
+                            Aftersun
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Maandverband" type="checkbox" value="true">
+                        <label class="form-check-label" for="Maandverband">
+                            Maandverband/tampons
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-lg-4 col-md-6 col-12">
+                    <h2>Apotheek</h2>
+                    <div class="form-check">
+                        <input class="form-check-input" name="" type="checkbox" value="true">
+                        <label class="form-check-label" for="Pijnstillers">
+                            Pijnstillers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="InsectenZalf" type="checkbox" value="true">
+                        <label class="form-check-label" for="InsectenZalf">
+                            Zalf tegen insectenbeten
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="pleisters" type="checkbox" value="true">
+                        <label class="form-check-label" for="pleisters">
+                            pleisters
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Ontsmettingsmdel" type="checkbox" value="true">
+                        <label class="form-check-label" for="Ontsmettingsmdel">
+                            Ontsmettingsmdel
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Snelverband" type="checkbox" value="true">
+                        <label class="form-check-label" for="Snelverband">
+                            Snelverband
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Neusspray" type="checkbox" value="true">
+                        <label class="form-check-label" for="Neusspray">
+                            Neusspray
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Persoonlijke Medicatie" type="checkbox" value="true">
+                        <label class="form-check-label" for="Persoonlijke Medicatie">
+                            Persoonlijke Medicatie
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Medicinale recepten" type="checkbox" value="true">
+                        <label class="form-check-label" for="Medicinale recepten">
+                            Medicinale recepten
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Voorbehoedsmdelen" type="checkbox" value="true">
+                        <label class="form-check-label" for="Voorbehoedsmdelen">
+                            Voorbehoedsmdelen
+                        </label>
+                    </div>
+                    <br>
+                    <h2>Documenten</h2>
+                    <div class="form-check">
+                        <input class="form-check-input" name="ID" type="checkbox" value="true">
+                        <label class="form-check-label" for="ID">
+                            Identiteitskaart
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Kids-ID" type="checkbox" value="true">
+                        <label class="form-check-label" for="Kids-ID">
+                            Kids-ID
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="reispas" type="checkbox" value="true">
+                        <label class="form-check-label" for="reispas">
+                            Reispas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Rijbewijs" type="checkbox" value="true">
+                        <label class="form-check-label" for="Rijbewijs">
+                            Rijbewijs
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Documenten reisverzekering" type="checkbox" value="true">
+                        <label class="form-check-label" for="Documenten reisverzekering">
+                            Documenten reisverzekering
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Wegenvignet" type="checkbox" value="true">
+                        <label class="form-check-label" for="Wegenvignet">
+                            Wegenvignet
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Inentingscertificaten" type="checkbox" value="true">
+                        <label class="form-check-label" for="Inentingscertificaten">
+                            Inentingscertificaten
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="SIS-kaart" type="checkbox" value="true">
+                        <label class="form-check-label" for="SIS-kaart">
+                            SIS-kaart
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Eurocross-kaart" type="checkbox" value="true">
+                        <label class="form-check-label" for="Eurocross-kaart">
+                            Eurocross-kaart
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Reisdocumenten" type="checkbox" value="true">
+                        <label class="form-check-label" for="Reisdocumenten">
+                            Reisdocumenten
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Euro's" type="checkbox" value="true">
+                        <label class="form-check-label" for="Euro's">
+                            Euro's
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Lokale Munt" type="checkbox" value="true">
+                        <label class="form-check-label" for="Lokale Munt">
+                            Lokale Munt
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Bankkaarten" type="checkbox" value="true">
+                        <label class="form-check-label" for="Bankkaarten">
+                            Bankkaarten
+                        </label>
+                    </div>
+                    <br>
+                    <h2>Ontspanning</h2>
+                    <div class="form-check">
+                        <input class="form-check-input" name="" type="checkbox" value="true">
+                        <label class="form-check-label" for="Lectuur">
+                            Lectuur
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Gezelschapsspel" type="checkbox" value="true">
+                        <label class="form-check-label" for="Gezelschapsspel">
+                            Gezelschapsspel
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Reisdocumenten" type="checkbox" value="true">
+                        <label class="form-check-label" for="Reisdocumenten">
+                            Reisdocumenten
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Toeristische kaart" type="checkbox" value="true">
+                        <label class="form-check-label" for="Toeristische kaart">
+                            Toeristische kaart
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Verrekijker" type="checkbox" value="true">
+                        <label class="form-check-label" for="Verrekijker">
+                            Verrekijker
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Rugzak" type="checkbox" value="true">
+                        <label class="form-check-label" for="Rugzak">
+                            Rugzak/heuptas
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Camera" type="checkbox" value="true">
+                        <label class="form-check-label" for="Camera">
+                            Camera
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Reservebatterijen" type="checkbox" value="true">
+                        <label class="form-check-label" for="Reservebatterijen">
+                            Reservebatterijen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="MP3" type="checkbox" value="true">
+                        <label class="form-check-label" for="MP3">
+                            MP3-speler
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Luchtmatras" type="checkbox" value="true">
+                        <label class="form-check-label" for="Luchtmatras">
+                            Luchtmatras
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Zwemgerief" type="checkbox" value="true">
+                        <label class="form-check-label" for="Zwemgerief">
+                            Zwemgerief
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Persoonlijk sportmateriaal" type="checkbox" value="true">
+                        <label class="form-check-label" for="Persoonlijk sportmateriaal">
+                            Persoonlijk sportmateriaal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Tablet" type="checkbox" value="true">
+                        <label class="form-check-label" for="Tablet">
+                            Tablet
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Oortjes" type="checkbox" value="true">
+                        <label class="form-check-label" for="Oortjes">
+                            Oortjes
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group col-lg-4 col-md-6 col-12">
+                    <h2>Voor De Kinderen</h2>
+                    <div class="form-check">
+                        <input class="form-check-input" name="" type="checkbox" value="true">
+                        <label class="form-check-label" for="Reisbedje">
+                            Reisbedje
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Luiers" type="checkbox" value="true">
+                        <label class="form-check-label" for="Luiers">
+                            Luiers
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="WC-papier" type="checkbox" value="true">
+                        <label class="form-check-label" for="WC-papier">
+                            WC-papier
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Zalfjes" type="checkbox" value="true">
+                        <label class="form-check-label" for="Zalfjes">
+                            Zalfjes/Poedertjes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Melkfles" type="checkbox" value="true">
+                        <label class="form-check-label" for="Melkfles">
+                            Melkfles
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Fopspeen" type="checkbox" value="true">
+                        <label class="form-check-label" for="Fopspeen">
+                            Fopspeen
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Voeding" type="checkbox" value="true">
+                        <label class="form-check-label" for="Voeding">
+                            Voeding
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Buggy" type="checkbox" value="true">
+                        <label class="form-check-label" for="Buggy">
+                            Buggy
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Parasol" type="checkbox" value="true">
+                        <label class="form-check-label" for="Parasol">
+                            Parasol
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Knuffel" type="checkbox" value="true">
+                        <label class="form-check-label" for="Knuffel">
+                            Knuffel/speelgoed
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="Zwembandjes" type="checkbox" value="true">
+                        <label class="form-check-label" for="Zwembandjes">
+                            Zwembandjes
+                        </label>
+                        </div>
+                        <br>
+                        <h2>Diversen</h2>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Wekker" type="checkbox" value="true">
+                            <label class="form-check-label" for="Wekker">
+                                Reiswekker,uurwerk
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Reservebril" type="checkbox" value="true">
+                            <label class="form-check-label" for="Reservebril">
+                                Reservebril
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Zonnebril" type="checkbox" value="true">
+                            <label class="form-check-label" for="Zonnebril">
+                                Zonnebril
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Lenzen" type="checkbox" value="true">
+                            <label class="form-check-label" for="Lenzen">
+                                Lenzen
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Lenzenvloeistof" type="checkbox" value="true">
+                            <label class="form-check-label" for="Lenzenvloeistof">
+                                Lenzenvloeistof
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Aansteker" type="checkbox" value="true">
+                            <label class="form-check-label" for="Aansteker">
+                                Aansteker
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Veilighesspelden" type="checkbox" value="true">
+                            <label class="form-check-label" for="Veilighesspelden">
+                                Veilighesspelden
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Zakmes" type="checkbox" value="true">
+                            <label class="form-check-label" for="Zakmes">
+                                Zakmes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Plakband" type="checkbox" value="true">
+                            <label class="form-check-label" for="Plakband">
+                                Plakband
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="GSM" type="checkbox" value="true">
+                            <label class="form-check-label" for="GSM">
+                                GSM,GSM-lader
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="Stroomadapter" type="checkbox" value="true">
+                            <label class="form-check-label" for="Stroomadapter">
+                                Stroomadapter
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="GPS" type="checkbox" value="true">
+                            <label class="form-check-label" for="GPS">
+                                GPS
+                            </label>
+                        </div>
+                        <strong>Andere:?</strong>
+                    </div>
+                    <p>Raadpleeg de brochure of uw reisdocumenten
+                        voor de vereiste formaliteiten (entiteitskaart,
+                        internationale reispas, visum, inentingen,...)
+                        Controleer tijdig de geldighe van entiteitskaarten en reispassen</p>
+                    <div class="form-group col-lg-12 col-md12 col-12">
+                        <button type="submit" class="btn btn-primary btn-outline-light">Submit</button>
+                    </div>
+        </form>
+
+        <!--Navigatie pijlen-->
+        <ul class="pagination ">
+            <li class="page-item"><a class="page-link" href="./reistips.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="./Bagagelijst.html">2</a></li>
+        </ul>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="footer-botom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12 contact">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="https://goo.gl/maps/6gdGj32A2ezvxtp19"><i class="fa fa-map-pin"></i> 21 Noord
+                                    Atlantische
+                                    Oceaan</a></li>
+                            <li><a href="tel: +123-456-7890"><i class="fa fa-mobile"></i> +123-456-7890</a></li>
+                            <li><a href="mailto:support@intricate.com"><i class="fa fa-at"></i>
+                                    support@intricate.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-12 socialmedia">
+                        <h3>Volg ons</h3>
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
